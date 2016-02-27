@@ -1,6 +1,19 @@
-# 个人独立博客站暂未搭建，请访问我的 CSDN 博客：
+# Flappy Bird (Cocos2d-JS版)
+HTML5地址: [http://xiets.appkf.cn/game/flappybird](http://xiets.appkf.cn/game/flappybird)
 
-# [http://blog.csdn.net/xietansheng](http://blog.csdn.net/xietansheng)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
