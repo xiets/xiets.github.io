@@ -21,11 +21,11 @@
 
     function openUrl() {
         var url = window.location.href;
-        url = decodeURIComponent(url);
         var index = url.indexOf("url=");
         if (index >= 0) {
             url = url.substring(index + 4);
             window.location.href = url;
+            // alert(decodeURIComponent(url));
         }
     }
 
