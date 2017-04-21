@@ -6,7 +6,9 @@
     <title>国务院办公厅关于延长劳动节假日的通知</title>
 </head>
 <body>
+<!--
 <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3447920981,463103704&fm=21&gp=0.jpg">
+-->
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
@@ -18,11 +20,16 @@
 <script language="javascript" type="text/javascript">
 
     function openUrl() {
-        // alert("Hello");
-        window.location.href = "https://mp.weixin.qq.com/s?__biz=MzIwNjAxNTQ2MA==&mid=2650775048&idx=1&sn=3ee69d1308e288acd7060cd5d6fe98c9&chksm=8f232083b854a99561dc6f6c915e59a014f240d8bf0ccb520ffbbd43c20a900705b00a1a0e72&mpshare=1&scene=1&srcid=0413zMnKyZibsqqfMOLSPNOZ&key=6543a5e229daa9fc7d8bd8e37527378c426a3dc15804979e2aada3958d8b644b84902d24d89fa65cb2e9749bc36297632498c7801dcac8d97b04e93a4a2ce1833dcadebcac7d626694b1038ea942641f&ascene=0&uin=MTAwMzMxMjA0MA%3D%3D&devicetype=iMac+MacBookPro11%2C2+OSX+OSX+10.12.4+build(16E195)&version=12020110&nettype=WIFI&fontScale=100&pass_ticket=xR6VMnBcvEIoUjXsYfpEmt1dqgAAgx%2FQvO3UhbAmws4ffmqqN%2FGc%2Fs%2Btds4bFiAX";
+        var url = window.location.href;
+        var index = url.indexOf("url=");
+        if (index >= 0) {
+            url = url.substring(index + 4);
+            window.location.href = url;
+            // alert(decodeURIComponent(url));
+        }
     }
 
     window.onload = function() {
-        window.setTimeout(openUrl, 2000);
+        window.setTimeout(openUrl, 1000);
     };
 </script>
